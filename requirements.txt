@@ -1,0 +1,28 @@
+# Core data processing
+pandas
+numpy
+
+# Machine Learning
+scikit-learn
+xgboost
+joblib
+
+# Visualization
+matplotlib
+seaborn
+plotly
+
+# Database connection (nếu dùng SQL Server / Postgres)
+sqlalchemy
+pyodbc
+psycopg2-binary
+
+# Environment management
+python-dotenv
+
+# Utils
+tqdm
+
+# Optional (nếu có notebook)
+jupyter
+ipykernel

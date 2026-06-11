@@ -1,0 +1,35 @@
+# === Python ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# === IDEs / Editors ===
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# === Data & Models (Bỏ qua file dung lượng lớn, bảo mật dữ liệu) ===
+data/raw/*.csv
+data/processed/*.csv
+data/predictions/*.csv
+outputs/reports/*.csv
+models/*.pkl
+models/*.h5
+
+# Ngoại lệ: Vẫn giữ lại các file mẫu hoặc cấu trúc thư mục nếu cần (Tùy chọn)
+# !data/raw/.gitkeep
+
+# === Operating System ===
+.DS_Store
+Thumbs.db

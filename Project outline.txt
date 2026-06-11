@@ -1,0 +1,85 @@
+ChurnPrediction/
+│
+├── README.md
+├── requirements.txt
+├── .gitignore
+│
+├── sql/
+│   │
+│   ├── schemas/
+│   │   ├── create_bronze.sql
+│   │   ├── create_silver.sql
+│   │   └── create_gold.sql
+│   │
+│   ├── procedures/
+│   │   ├── bronze_sp_load_telco_customer.sql
+│   │   └── silver_sp_load_telco_customer.sql
+│   │
+│   └── views/
+│       └── gold_vw_customer_churn_features.sql
+│
+├── data/
+│   │
+│   ├── raw/
+│   │   └── Telco_customer_churn.csv
+│   │
+│   ├── processed/
+│   │   └── feature_dataset.csv
+│   │
+│   └── predictions/
+│       └── churn_predictions.csv
+│
+├── notebooks/
+│   │
+│   ├── 01_eda.ipynb
+│   ├── 02_feature_engineering.ipynb
+│   └── 03_model_experiments.ipynb
+│
+├── src/
+│   │
+│   ├── config/
+│   │   └── settings.py
+│   │
+│   ├── database/
+│   │   ├── connection.py
+│   │   └── extract.py
+│   │
+│   ├── features/
+│   │   └── preprocess.py
+│   │
+│   ├── models/
+│   │   ├── train_logistic.py
+│   │   ├── train_random_forest.py
+│   │   ├── train_xgboost.py
+│   │   └── predict.py
+│   │
+│   ├── evaluation/
+│   │   ├── metrics.py
+│   │   └── explainability.py
+│   │
+│   └── visualization/
+│       └── plots.py
+│
+├── models/
+│   │
+│   ├── logistic_regression.pkl
+│   ├── random_forest.pkl
+│   └── xgboost.pkl
+│
+├── outputs/
+│   │
+│   ├── figures/
+│   │   ├── churn_by_contract.png
+│   │   ├── churn_by_internet_service.png
+│   │   ├── roc_curve.png
+│   │   └── feature_importance.png
+│   │
+│   └── reports/
+│       └── model_performance.csv
+│
+├── powerbi/
+│   │
+│   ├── ChurnDashboard.pbix
+│   └── dashboard_screenshots/
+│
+└── main.py
